@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --color-navy: #3f72af;
+    --color-pink: #fc5185;
+    --color-blue: #364f6b;
+    --color-white: #ffff;
+    --color-black: black;
+    --color-gray: #dedede;
+    --color-grey: grey;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--color-navy);
+    color: var(--color-navy);
+}
+
+.container {
+    display: flex;
+    max-width: 850px;
+    background: var(--color-white);
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login {
+    width: 400px;
+}
+
+form {
+    width: 250px;
+    margin: 60px auto;
+}
+
+h2 {
+    margin: 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+hr {
+    border-top: 2px solid var(--color-pink);
+}
+
+p {
+    text-align: center;
+    margin: 10px;
+}
+
+.right img {
+    width: 450px;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+input {
+    width: 100%;
+    margin: 2px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--color-gray);
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 252px;
+    color: var(--color-white);
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: var(--color-pink);
+}
+
+button:hover {
+    background: var(--color-navy);
+}
+
+.danger-msg{
+    position: absolute;
+    top : 83%;
+    width: 400px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #fc5185;
+    color: #ffff;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 820px) {
+    .container {
+        width: 80%;
+        max-width: 475px;
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        overflow: hidden;
+    }
+
+    form {
+        margin: 20px auto;
+    }
+
+    .login {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .right img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    .container {
+        max-width: 400px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .right img {
+        display: none;
+    }
+}
