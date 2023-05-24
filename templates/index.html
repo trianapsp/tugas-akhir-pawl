@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PRESENSI MAHASISWA</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style3.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li class="img"><a href="#"><img src="{{url_for('static', filename='logo.png')}}" alt="Gambar" width="70px"></a></li>
+            <li class="logo">PRESENSI</li>
+            <div class="items">
+
+                <li><a href="#home">Home</a></li>
+                <div class="dropdown">
+
+                    <li><a href="#login" class="dropbtn"> Login &nbsp; <i class="fas fa-caret-down" style="color:'black !important'"></i></a></li>
+                    <div class="dropdown-content">
+                        <a href="{{url_for('/mahasiswa')}}">Mahasiswa</a>
+                        <a href="{{url_for('/dosen')}}">Dosen</a>
+                    </div>
+                </div>
+            </div>
+        
+            <li class="search-icon">
+                <input type="text" placeholder="Search">
+                <label class="icon">
+                    <span class="fas fa-search"></span>
+                </label>
+            </li>
+        </ul>
+    </nav>    
+   
+    <div class="slide">
+        <div class="slide1">
+            <img src="/static/2.jpg" alt="">
+        </div>
+    </div>
+
+
+    <section id="home">
+        <div class="sambutan">
+            <br><br><br><br>
+            <h1>Selamat Datang di Aplikasi Presensi Online</h1>
+            <p>
+                Aplikasi Presensi online memberikan kemudahan untuk Anda agar dapat memonitor dan mengelola presensi kehadiran setiap mahasiswa dengan cepat dan akurat, selama menjalankan proses belajar  mengajar. Pengguna aplikasi adalah mahasiswa dan dosen.
+                <br>
+                Silakan mulai mengakses aplikasi presensi dengan memasukan username dan password untuk login ke dalam aplikasi.
+            </p> 
+        </div> 
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>PRESENSI</h3>
+            <p>Aplikasi Presensi Berbasis Online</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 Aplikasi Presensi. designed by Kelompok 7 Prodi Sistem Informasi 2021</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
